@@ -1,6 +1,6 @@
 <?php 
-
-class funcionario {
+//Classe de objetos
+class funcionario {  
     private $nome;
     private $salarioBase;
     private $horasExtras;
