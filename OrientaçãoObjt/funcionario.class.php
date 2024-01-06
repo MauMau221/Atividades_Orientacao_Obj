@@ -12,7 +12,8 @@ class funcionario {
     } 
 
     public function setSalarioBase($base) {
-        $this->salarioBase = $base;
+        
+        $this->salarioBase = $base + ($base * 0.10);  //Resultado exercicio 
     } 
 
     public function sethorasExtras($extras) {
@@ -21,6 +22,7 @@ class funcionario {
     
     public function setValorDaHora($valor) {
         $this->valorDaHora = $valor;
+        
     } 
 
     public function getSalarioEfetivo() {
@@ -28,6 +30,5 @@ class funcionario {
     } 
 
 }
-
 
 ?>
