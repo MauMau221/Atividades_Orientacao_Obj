@@ -6,6 +6,7 @@ class funcionario {
     private $horasExtras;
     private $valorDaHora;
 
+    //"ESTE" = $THIS->   USADO PARA REFERENCIAR UMA VARIAVEL DENTRO DO ESCOPO DA CLASS
 
     public function setNome($nome) {
         $this->nome = $nome;
