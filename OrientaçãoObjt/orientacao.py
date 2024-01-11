@@ -14,7 +14,16 @@ class Caneca:
         self.status = "Cheia"
 
 
-caneca1 = Caneca("Mario", "Starbucks", "Verde")
+class CanecaMario(Caneca):
+    def __init__(self):
+        self.nome = "Mario"   
+        self.logo = "StarBucks"
+        self.cor = "Verde"
+        self.status = "Cheia"
+        
+
+
+caneca1 = CanecaMario()
 caneca2 = Caneca("Flash", "Starbuckks", "Vermelha")
 
 print("A caneca", caneca1.nome, "e possui o logo", caneca1.logo)
@@ -28,3 +37,4 @@ caneca2.beber()
 print("A caneca 1:",caneca1.status)
 print("A caneca 2:",caneca2.status)
 
+print(caneca1.formato)
