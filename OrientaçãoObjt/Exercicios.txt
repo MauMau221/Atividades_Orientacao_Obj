@@ -6,5 +6,5 @@ Além disso ao fim de cada rodada, apresente a contagem do placar de vitorias!
 OBS: utilize a seguinte função abaixo para execultar uma escolha aleatoria.
 
 import random 
-foo = ['a','b','c','d','e']
+foo = ['a','b','c']
 print(random.choice(foo)) // Algum valor aleatorio da lista foo

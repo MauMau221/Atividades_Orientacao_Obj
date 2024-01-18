@@ -1,28 +1,44 @@
 class Jogador:
-    def __INIT__(self, nome, statusMao):
+    def __init__(self, nome, jogo):
         self.nome = nome
-        self.statusMao = 0
-        self.jogo = 0
+
+    def darnome(self):
+        self.nome = input('Informe o nome do jogador um: ')
     def jogar(self):
-        self.jogo = input("Pedra, papel ou tesoura?")
+        self.jogo = input('Pedra, Papel ou Tesoura? ')
 
-    def pedra(self):
-        self.statusMao =  'a'
-        
-    def papel(self):
-        self.statusMao = 'b'
-        
-    def tesoura(self):
-        self.statusMao = 'c'
 
-class jogador1(Jogador):
-    def __INIT__(self):
-        self.nome = input("Qual é o seu nome? ")
-        self.statusMao = input("Pedra, papel ou tesoura?")
+jogadorum = Jogador('', '')
+jogadorum.darnome()
+jogadorum.jogar()
 
-class jogador2(Jogador):
-    def __INIT__(self):
-        self.nome = "Adversario"
-        import random 
-        foo = ['a','b','c']
-        self.statusMao = random.choice(foo) # Algum valor aleatorio da lista foo
+
+jogadordois = Jogador('Maquina', '')
+
+import random
+foo = ['Pedra','Papel','Tesoura']
+jogadordois.jogo = (random.choice(foo))
+
+
+
+if(jogadorum.jogo == 'Pedra') and (jogadordois.jogo == 'Tesoura'):
+    print('Jogador 1 ganhou.  ', 'O jogo do jogador doius foi', jogadordois.jogo)
+
+elif(jogadorum.jogo == 'Papel') and (jogadordois.jogo == 'Pedra'):
+    print('Jogador 1 ganhou.  ', 'O jogo do jogador doius foi', jogadordois.jogo)
+
+elif(jogadorum.jogo == 'Tesoura') and (jogadordois.jogo == 'Papel'):
+    print('Jogador 1 ganhou.  ', 'O jogo do jogador doius foi', jogadordois.jogo)
+
+
+elif(jogadordois.jogo == 'Pedra') and (jogadorum.jogo == 'Tesoura'):
+    print('Jogador 2 ganhou.  ', 'O jogo do jogador doius foi', jogadorum.jogo)
+
+elif(jogadordois.jogo == 'Papel') and (jogadorum.jogo == 'Pedra'):
+    print('Jogador 2 ganhou.  ', 'O jogo do jogador doius foi', jogadorum.jogo)
+
+elif(jogadordois.jogo == 'Tesoura') and (jogadorum.jogo == 'Papel'):
+    print('Jogador 2 ganhou.  ', 'O jogo do jogador doius foi', jogadorum.jogo)
+
+else:
+    print('EMPATE', 'Jogador', jogadorum.nome, 'Meu jogo é: ', jogadorum.jogo,' E jogador ', jogadordois.nome, 'O jogo é : ', jogadordois.jogo)

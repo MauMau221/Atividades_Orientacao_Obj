@@ -38,3 +38,16 @@ print("A caneca 1:",caneca1.status)
 print("A caneca 2:",caneca2.status)
 
 print(caneca1.formato)
+
+
+
+
+
+
+
+
+
+if() {
+
+
+} asdasdasddad
