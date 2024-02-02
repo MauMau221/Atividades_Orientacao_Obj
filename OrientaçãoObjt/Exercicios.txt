@@ -1,10 +1,20 @@
-Dois amigos brincam de pedra, papel e tesoura.
+    EXERCICIO 1
 
-Descreva um programa que simule algumas rodadas desse jogo.
-Além disso ao fim de cada rodada, apresente a contagem do placar de vitorias!
+- Dois amigos brincam de pedra, papel e tesoura.
 
-OBS: utilize a seguinte função abaixo para execultar uma escolha aleatoria.
+- Descreva um programa que simule algumas rodadas desse jogo.
+- Além disso ao fim de cada rodada, apresente a contagem do placar de vitorias!
+
+OBS: utilize a seguinte função abaixo para uma escolha aleatoria.
 
 import random 
 foo = ['a','b','c']
 print(random.choice(foo)) // Algum valor aleatorio da lista foo
+
+    EXERCICIO 2 
+- Um edificio possui 15 andares, sendo 14 andares de moradia e o primeiro reservado para o Terreo (descrito apenas como "1").
+
+- Para que os moradores transitem entre os andares, o edificio dispõe de um elevador. O elevador não possui restrição de andar e pode transitar a qualquer hora.
+
+Descreva um programa para utilizar o elevador
+

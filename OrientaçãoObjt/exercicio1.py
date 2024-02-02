@@ -9,6 +9,7 @@ class Jogador:
         self.jogo = input('Pedra, Papel ou Tesoura? ')
 
 
+#Criando jogador um com o objeto Jogador já criado
 jogadorum = Jogador('', '')
 jogadorum.darnome()
 jogadorum.jogar()
