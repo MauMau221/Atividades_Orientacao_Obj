@@ -23,6 +23,8 @@ currency_data = data.get(acesso)
 if response.status_code == 200:
     if currency_data and "name" in currency_data:
         print(f'Nome da moeda: {currency_data["name"]}')
+    if currency_data and "low" in currency_data:
+        print(f'Atual cotação da moeda: {currency_data["low"]}')
     else:
         print(f'Dados inválidos ou chave "name" não encontrada para {acesso}.')
 else:

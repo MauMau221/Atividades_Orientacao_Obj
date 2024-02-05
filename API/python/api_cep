@@ -1,0 +1,17 @@
+import requests
+
+username = input('Qual o seu CEP? ')
+
+url = f'https://brasilapi.com.br/api/cep/v2/{username}'
+
+response = requests.get(url)
+
+if response.status_code == 200:
+    resultado = response.json()
+    rua = resultado.get('street')
+    bairro = resultado.get('neighborhood')
+    print(f'Rua: {rua}\n')
+    print(f'Bairro: {bairro}')
+    
+else:
+    print(f'Erro na solicitação. Código de status: {response.status_code}')
