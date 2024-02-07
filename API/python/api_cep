@@ -1,8 +1,8 @@
 import requests
 
-username = input('Qual o seu CEP? ')
+cep = input('Qual o seu CEP? ')
 
-url = f'https://brasilapi.com.br/api/cep/v2/{username}'
+url = f'https://brasilapi.com.br/api/cep/v2/{cep}'
 
 response = requests.get(url)
 
@@ -10,8 +10,10 @@ if response.status_code == 200:
     resultado = response.json()
     rua = resultado.get('street')
     bairro = resultado.get('neighborhood')
+    cidade = resultado.get('city')
     print(f'Rua: {rua}\n')
-    print(f'Bairro: {bairro}')
+    print(f'Bairro: {bairro}\n')
+    print(f'Cidade: {cidade}\n')
     
 else:
     print(f'Erro na solicitação. Código de status: {response.status_code}')

@@ -2,19 +2,19 @@ import requests
 
 print('GitHub Useres')
 
-username = input('Você gostaria de cotar euro, dólar ou bitcoin? ')
+coin = input('Você gostaria de cotar euro, dólar ou bitcoin? ')
 acesso = ''
-if username.lower() == 'euro':
-    username = 'EUR-BRL'
+if coin.lower() == 'euro':
+    coin = 'EUR-BRL'
     acesso = 'EURBRL'
-elif username.lower() == 'dolar':
-    username = 'USD-BRL'
+elif coin.lower() == 'dolar':
+    coin = 'USD-BRL'
     acesso = 'USDBRL'
-elif username.lower() == 'bitcoin':
-    username = 'BTC-BRL'
+elif coin.lower() == 'bitcoin':
+    coin = 'BTC-BRL'
     acesso = 'BTCBRL'
 
-url = f'https://economia.awesomeapi.com.br/last/{username}'
+url = f'https://economia.awesomeapi.com.br/last/{coin}'
 
 response = requests.get(url)
 data = response.json()

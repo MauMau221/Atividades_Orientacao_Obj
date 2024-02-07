@@ -9,3 +9,4 @@ let proximaCarta = () => {
 }
 addEventListener('click',proximaCarta)
 
+ 
