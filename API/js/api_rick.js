@@ -1,3 +1,5 @@
+//Site base: https://rickandmortyapi.com/ //
+
 let chamada = () =>{
     let epsodio = prompt('De qual epsodio você gostaria de exibir informações? ');
 
