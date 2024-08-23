@@ -3,4 +3,6 @@ Local para desenvolver atividades e aprimorar aprendizados em programação orie
 
 Linguagens utilizada atualmente 
 -- Python
+
 -- PHP
+
