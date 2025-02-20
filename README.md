@@ -7,3 +7,4 @@ Linguagens utilizada atualmente
 
 -- PHP
 
+--Angular
