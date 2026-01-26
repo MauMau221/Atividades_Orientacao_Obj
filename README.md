@@ -3,11 +3,7 @@ Local para desenvolver atividades e aprimorar aprendizados em programação orie
 
 Linguagens utilizada atualmente 
 
---Angular
-    node -v <br>  
-    npm install -g @angular/cli <br>  
-    npm install <br>  
-    ng serve <br>      
+--Angular     
 
 -- PHP
 
